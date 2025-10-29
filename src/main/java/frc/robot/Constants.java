@@ -9,7 +9,7 @@ public final class Constants {
     public static final int AlgaeRemoverID = 2;
 
     //operation IDs
-    public static final int kControllerPort = 0;
+    public static final int kControllerPort = 13;
 
     //subsystems
     public static final AlgaeRemoverSubsystem ALGAE_REMOVER_SUBSYSTEM = new AlgaeRemoverSubsystem();

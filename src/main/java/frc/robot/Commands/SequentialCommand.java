@@ -9,7 +9,12 @@ public class SequentialCommand extends SequentialCommandGroup
     public SequentialCommand ()
     {
         addCommands(
-            new WaitCommand(0) // temp
+            new ShooterForwards(1.5);
+            new ShooterBackwards();
+            new ShooterStop();
+            new AlgaeForwards(1.5);
+            new AlgaeBackwards(1.5);
+            new AlgaeStop();
         );
 
         addRequirements();

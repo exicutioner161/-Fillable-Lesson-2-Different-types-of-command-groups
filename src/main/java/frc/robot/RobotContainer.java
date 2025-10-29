@@ -41,6 +41,10 @@ public class RobotContainer {
   private void configureBindings() 
   {
     // TO DO: CONFIGUE BINDINGS FOR COMMANDS
+    driverController.a.whileTrue(new RunMotor());
+    driverController.b.whileTrue(new RunMotor());
+    driverController.x.whileTrue(new RunMotor());
+    driverController.y.whileTrue(new RunMotor());
   }
 
   /**
