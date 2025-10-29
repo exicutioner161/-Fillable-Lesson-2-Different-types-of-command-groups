@@ -10,7 +10,7 @@ public class SequentialCommand extends SequentialCommandGroup
     {
         addCommands(
             ShooterForwards(1.5);
-            ShooterBackwards();
+            ShooterBackwards(1.5);
             ShooterStop();
             AlgaeForwards(1.5);
             AlgaeBackwards(1.5);
