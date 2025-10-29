@@ -12,8 +12,7 @@ public class ShooterForwards extends SequentialCommandGroup
     public ShooterForwards (double time)
     {
         addCommands(
-            Constants.SHOOTER_SUBSYSTEM.runMotorForwardsCommand(),
-            new WaitCommand(time)
+            Constants.SHOOTER_SUBSYSTEM.runMotorForwardsCommand().withTimeout(time)
             );
         
         addRequirements(Constants.SHOOTER_SUBSYSTEM);

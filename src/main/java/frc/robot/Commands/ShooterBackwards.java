@@ -12,8 +12,7 @@ public class ShooterBackwards extends SequentialCommandGroup
     public ShooterBackwards (double time)
     {
         addCommands(
-            Constants.SHOOTER_SUBSYSTEM.runMotorBackwardsCommand(),
-            new WaitCommand(time)
+            Constants.SHOOTER_SUBSYSTEM.runMotorBackwardsCommand().withTimeout(time)
             );
         
         addRequirements(Constants.SHOOTER_SUBSYSTEM);

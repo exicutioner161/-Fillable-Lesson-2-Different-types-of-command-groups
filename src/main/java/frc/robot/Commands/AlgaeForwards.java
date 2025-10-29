@@ -12,8 +12,7 @@ public class AlgaeForwards extends SequentialCommandGroup
     public AlgaeForwards (double time)
     {
         addCommands(
-            Constants.ALGAE_REMOVER_SUBSYSTEM.runRemoverForwardsCommand(),
-            new WaitCommand(time)
+            Constants.ALGAE_REMOVER_SUBSYSTEM.runRemoverForwardsCommand().withTimeout(time)
             );
         
         addRequirements(Constants.ALGAE_REMOVER_SUBSYSTEM);
