@@ -38,7 +38,6 @@ public class RobotContainer {
    */
   private void configureBindings() 
   {
-    // TO DO: CONFIGUE BINDINGS FOR COMMANDS
     driverController.a().whileTrue(new SequentialCommand());
     driverController.b().whileTrue(new ParallelCommand());
     driverController.x().whileTrue(new DeadlineCommand());
