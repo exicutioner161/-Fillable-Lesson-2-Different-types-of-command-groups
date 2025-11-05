@@ -19,7 +19,8 @@ public class RobotContainer {
   // The robot's subsystems and commands are defined here...
 
   // Replace with CommandPS4Controller or CommandJoystick if needed
-  private final CommandXboxController driverController = new CommandXboxController(Constants.kControllerPort);
+  private final CommandXboxController driverController = new CommandXboxController(
+      Constants.kControllerPort);
 
   /**
    * The container for the robot. Contains subsystems, OI devices, and commands.
@@ -41,10 +42,14 @@ public class RobotContainer {
    */
   private void configureBindings() {
     // completed by BT
-    driverController.a().whileTrue(new SequentialCommand());
-    driverController.b().whileTrue(new ParallelCommand());
-    driverController.x().whileTrue(new DeadlineCommand());
-    driverController.y().whileTrue(new RaceCommand());
+    driverController.a().whileTrue(
+        new SequentialCommand());
+    driverController.b().whileTrue(
+        new ParallelCommand());
+    driverController.x().whileTrue(
+        new DeadlineCommand());
+    driverController.y()
+        .whileTrue(new RaceCommand());
   }
 
   /**
