@@ -1,8 +1,6 @@
 package frc.robot.Commands;
 
 import edu.wpi.first.wpilibj2.command.ParallelRaceGroup;
-import edu.wpi.first.wpilibj2.command.WaitCommand;
-import frc.robot.Constants;
 
 public class RaceCommand extends ParallelRaceGroup
 {
@@ -14,12 +12,12 @@ public class RaceCommand extends ParallelRaceGroup
     public RaceCommand ()
     {
         addCommands(
-            ShooterForwards(1);
-            AlgaeForwards(1.5);
-            ShooterBackwards(1.5);
-            AlgaeBackwards(1.5);
-            ShooterStop();
-            AlgaeStop();
+            new ShooterForwards(1),
+            new AlgaeForwards(1.5),
+            new ShooterBackwards(1.5),
+            new AlgaeBackwards(1.5),
+            new ShooterStop(),
+            new AlgaeStop()
         );
 
         addRequirements();
