@@ -15,7 +15,11 @@ public class ParallelCommand extends
                                 new ShooterForwards(
                                                 1.5),
                                 new AlgaeForwards(
-                                                1.5)));
+                                                1.5)),
+                                new ShooterStop(),
+                                new AlgaeStop()
+
+                );
 
                 addRequirements(getRequirements());
         }

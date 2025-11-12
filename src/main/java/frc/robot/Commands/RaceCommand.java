@@ -1,6 +1,6 @@
 package frc.robot.Commands;
 
-import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;;
+import edu.wpi.first.wpilibj2.command.ParallelRaceGroup;
 
 public class RaceCommand extends
                 SequentialCommandGroup {
@@ -10,7 +10,7 @@ public class RaceCommand extends
          */
         public RaceCommand() {
                 // completed by BT
-                addCommands(new SequentialCommandGroup(
+                addCommands(new ParallelRaceGroup(
                                 new ShooterForwards(
                                                 1),
                                 new AlgaeForwards(
@@ -18,10 +18,10 @@ public class RaceCommand extends
                                 new ShooterBackwards(
                                                 1.5),
                                 new AlgaeBackwards(
-                                                1.5),
+                                                1.5)),
                                 new SequentialCommandGroup(
                                                 new ShooterStop(),
-                                                new AlgaeStop())));
+                                                new AlgaeStop()));
 
                 addRequirements(getRequirements());
         }

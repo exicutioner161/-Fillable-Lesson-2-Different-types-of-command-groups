@@ -19,9 +19,7 @@ public class DeadlineCommand extends
                                 new ShooterBackwards(
                                                 1.5),
                                 new AlgaeBackwards(
-                                                1.5),
-                                new ShooterStop(),
-                                new AlgaeStop()),
+                                                1.5)),
                                 new ParallelDeadlineGroup(
                                                 new ShooterStop(),
                                                 new AlgaeStop()));

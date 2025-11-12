@@ -6,9 +6,8 @@ public class SequentialCommand extends
                 SequentialCommandGroup {
         public SequentialCommand() {
                 // completed by BT
-                addCommands(new SequentialCommandGroup(
-                                new ShooterForwards(
-                                                1.5),
+                addCommands(new ShooterForwards(
+                                1.5),
                                 new ShooterBackwards(
                                                 1.5),
                                 new ShooterStop(),
@@ -16,7 +15,7 @@ public class SequentialCommand extends
                                                 1.5),
                                 new AlgaeBackwards(
                                                 1.5),
-                                new AlgaeStop()));
+                                new AlgaeStop());
 
                 addRequirements(getRequirements());
         }
